@@ -1,0 +1,85 @@
+body{
+    height: 95vh;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    background-color: var(--bgColor);
+    color: var(--olive);
+    font-family: 'Press Start 2P', cursive;
+  }
+
+
+:root{
+  --green: #00ff41;
+  --olive: #00bf11;
+  --darkG: #003B00;
+  --darkB: #130a30;
+  --red: #ff0000;
+  --blue: #0000ff;
+  --bgColor: #05030a;
+  --bgCanvas: #0f0a1e;
+}
+  
+#snake{
+    border: 15px solid var(--darkB);
+    box-shadow: 0 0 4px var(--green), 0 0 8px var(--red), 0 0 10px var(--blue);
+}
+
+h1 {
+    text-shadow: 0 0 5px var(--red), 0 0 7px var(--blue);
+    padding-bottom: 5px;
+  }
+
+
+
+/*botão refresh */
+
+.button-53 {
+  background-color: var(--darkB);
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: var(--olive);
+  display: flex;
+  font-family: "Press Start 2p", cursive;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  margin: 30px 0px 0px 0px ;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-53:focus {
+  outline: 0;
+}
+
+.button-53:after {
+  content: '';
+  position: absolute;
+  border: 1px solid var(--green);
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button-53:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
