@@ -83,8 +83,8 @@ function iniciarJogo(){
 
 let jogo = setInterval(iniciarJogo, 100);
 
-function refreshPage(){
-    window.location.reload();
-}
 
+function refreshPage(){
+     window.location.reload();
+}
 
